@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pacientes</title>
+    <link rel="stylesheet" href="patients.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h2>Lista de Pacientes</h2>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Barra de controle com botões -->
+        <div class="controls">
+            <a href="index.html" class="btn">Voltar para o Login</a>
+            <a href="add-patient.html" class="btn btn-right">Adicionar Novo Paciente</a>
+        </div>
+
+        <!-- Tabela de Pacientes -->
+        <table id="patientsTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Pacientes serão carregados dinamicamente aqui -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

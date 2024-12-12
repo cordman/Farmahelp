@@ -1,0 +1,105 @@
+/* patients.css */
+
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #004d40;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #00332a;
+}
+
+/* Tabela de Pacientes */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #004d40;
+    color: white;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table .btn {
+    background-color: #004d40;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+table .btn:hover {
+    background-color: #00332a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    table th,
+    table td {
+        font-size: 0.9rem;
+    }
+
+    header h2 {
+        font-size: 1.8rem;
+    }
+}

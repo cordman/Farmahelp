@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="add-patient.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h2>Cadastro de Paciente</h2>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Formulário de cadastro -->
+        <form id="addPatientForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" required>
+
+            <label for="familyHistory">Histórico Familiar:</label>
+            <textarea id="familyHistory"></textarea>
+
+            <label for="medications">Medicamentos em Uso:</label>
+            <textarea id="medications"></textarea>
+
+            <label for="allergies">Alergias:</label>
+            <textarea id="allergies"></textarea>
+
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+    </main>
+
+    <!-- Botão "Voltar" na parte inferior da página -->
+    <div class="controls">
+        <a href="patients.html" class="btn">Voltar para a Lista de Pacientes</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
